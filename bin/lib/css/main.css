@@ -3,6 +3,17 @@
 	text-align: center;
 }
 
+/*General Purpose Button*/
+
+.course-btn:link, .course-btn:visited {
+	background-color: #3DB1D8;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 14px 25px;
+}
+.course-btn:hover { background-color: #4EC2E9; }
+
 /* Dropdown Menu */
 ul {
 	list-style-type: none;
