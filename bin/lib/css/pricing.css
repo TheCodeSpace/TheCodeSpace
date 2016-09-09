@@ -1,0 +1,25 @@
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+
+
+th {
+	height: 50px;
+	font-size: 22px;
+	background-color: #3DB1D8;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2}
+
+.enroll-btn:link, .enroll-btn:visited {
+	background-color: #3DB1D8;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 14px 25px;
+}
+.enroll-btn:hover { background-color: #4EC2E9; }
