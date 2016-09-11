@@ -15,7 +15,7 @@
 .btn:hover { background-color: #4EC2E9; }
 
 /* Small Button */
-.sbtn:link, .btn:visited {
+.sbtn:link, .sbtn:visited {
 	background-color: #3DB1D8;
 	text-decoration: none;
 	color: white;
