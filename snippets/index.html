@@ -15,9 +15,16 @@
 					<a href="users.html">Users</a>
 				</div>
 
-                <!--http://stackoverflow.com/questions/4642681/simple-way-to-display-data-in-a-txt-file-on-a-webpage--!>
+
 			</li>
 		</ul>
+
+        <?php
+            $myfilename = "snippets.txt";
+            if(file_exists($myfilename)){
+                echo file_get_contents($myfilename);
+            }
+        ?>
 
 	</body>
 </html>
