@@ -3,6 +3,17 @@
 	text-align: center;
 }
 
+.mail {
+    background-color: lightgray;
+    color: black;
+    margin: 0px;
+    padding: 10px;
+    width: 400px;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+
 /*General Purpose Button*/
 
 .btn:link, .btn:visited {
@@ -26,7 +37,8 @@ ul {
 }
 
 li {
-	float: right;
+	display: inline-block;
+;
 }
 
 li a, .dropbtn {
