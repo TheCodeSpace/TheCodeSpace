@@ -1,1 +1,1 @@
-<embed class="txt_style" src="yourtextfile.txt">
+<img src="my_immage.png" height="512" width="512" href="https://google.com">
