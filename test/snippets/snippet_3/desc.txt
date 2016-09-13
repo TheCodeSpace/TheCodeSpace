@@ -1,5 +1,7 @@
 This tag allows you to add custom images with size scaling.
 
 Replace src="my_image.png" with your custom image.
+
 Replace height="512" and width="512" with your custom height and width in pixels respectively.
+
 Add hyper links with this tag: href="http://your.url" or intersite href="/specialfolder/index.html"
