@@ -8,7 +8,9 @@
 .snippets {
     width: auto;
     height: 200;
-    background-color: burlywood;
+    background-color: gray;
+    float: left;
+    margin: 10px;
 }
 
 /*General Purpose Button*/
