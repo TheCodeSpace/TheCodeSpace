@@ -1,0 +1,8 @@
+This tag allows you to use write text on your HTML page.
+
+Replace "Hello World" with your custom text.
+
+Adding breaks <br> allows you to have multiple lines of text.
+
+Add hyper links with this tag: href="http://your.url" or intersite href="/specialfolder/index.html"
+

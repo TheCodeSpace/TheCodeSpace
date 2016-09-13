@@ -1,0 +1,4 @@
+This is a tag that allows you to import TXT files, with variable content.
+
+Replace "txt_styling" with your custom css styling class.
+Replace "yourtextfile.txt" with your custom .txt file name.
