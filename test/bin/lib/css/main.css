@@ -3,6 +3,13 @@
 	text-align: center;
 }
 
+
+/*Embed Snippet*/
+.snippets {
+    width: auto;
+    height: 200;
+}
+
 /*General Purpose Button*/
 
 .btn:link, .btn:visited {
