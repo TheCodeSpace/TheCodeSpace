@@ -14,16 +14,6 @@
 }
 .btn:hover { background-color: #4EC2E9; }
 
-/* Small Button */
-.sbtn:link, .sbtn:visited {
-	background-color: #3DB1D8;
-	text-decoration: none;
-	color: white;
-	text-align: center;
-	padding: 5px 10px;
-}
-.sbtn:hover { background-color: #4EC2E9; }
-
 /* Dropdown Menu */
 ul {
 	list-style-type: none;
@@ -42,6 +32,7 @@ li a, .dropbtn {
 	display: inline-block;
 	color: white;
 	text-align: center;
+	padding: 14px 16px;
 	text-decoration: none;
 }
 
