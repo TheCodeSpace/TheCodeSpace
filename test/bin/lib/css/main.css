@@ -9,13 +9,13 @@
     width: auto;
     height: 200;
     background-color: gray;
-    float: left;
     margin: 10px;
 }
 
 .snippets_block {
     width: auto;
     height: 220;
+    display: inline-block;
     background-color: gray;
     margin: 10px;
 }
