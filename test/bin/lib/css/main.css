@@ -9,6 +9,7 @@
     color: white;
     background-color: lightgray;
     margin: 10px;
+    border-radius: 10px;
 }
 
 .snippets_header {
@@ -17,7 +18,31 @@
     margin: 30px;
     padding: 10px;
     width: 800px;
+    border-radius: 10px;
     display: inline-block;
+
+}
+
+.asc {
+    background-color: lightgray;
+    color: black;
+    margin: 30px;
+    padding: 10px;
+    width: 680px;
+    display: inline-block;
+    border-radius: 100px;
+    font-family: "Courier New", monospace;
+    font-style: italic;
+}
+
+.mail {
+    background-color: lightgray;
+    color: black;
+    margin: 0px;
+    padding: 10px;
+    width: 400px;
+    display: inline-block;
+    border-radius: 10px;
 
 }
 
@@ -25,12 +50,14 @@
     background-color: lightgray;
     margin: 10px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .snippets_block {
     display: inline-block;
     background-color: gray;
     margin: 10px;
+    border-radius: 10px;
 }
 
 .snippet_img {
@@ -56,10 +83,19 @@ ul {
 	overflow: hidden;
 	background-color: #333;
 	font-family: Arial;
+    border-radius: 10px;
 }
 
 li {
+	float: left;
+        border-radius: 10px;
+
+}
+
+li2 {
 	float: right;
+        border-radius: 10px;
+
 }
 
 li a, .dropbtn {
@@ -68,6 +104,8 @@ li a, .dropbtn {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+        border-radius: 10px;
+
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -76,6 +114,32 @@ li a:hover, .dropdown:hover .dropbtn {
 
 li .dropdown {
 	display: inline-block;
+        border-radius: 10px;
+
+
+}
+
+li2 a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+        border-radius: 10px;
+
+}
+
+li2 a:hover, .dropdown:hover .dropbtn {
+	background-color: #2CA0C7;
+        border-radius: 10px;
+
+}
+
+li2 .dropdown {
+	display: inline-block;
+        border-radius: 10px;
+
+
 }
 
 .dropdown-content {
@@ -84,6 +148,8 @@ li .dropdown {
 	background-color: #f9f9f9;
 	min-width: 140px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border-radius: 10px;
+
 }
 
 .dropdown-content a {
@@ -92,12 +158,16 @@ li .dropdown {
 	text-decoration: none;
 	display: block;
 	text-align: left;
+        border-radius: 10px;
+
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
 	display: block;
+        border-radius: 10px;
+
 }
 
 /* Defaults */
