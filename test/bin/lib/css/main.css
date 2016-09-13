@@ -6,18 +6,33 @@
 
 /*Embed Snippet*/
 .snippets {
-    width: auto;
-    height: 200;
     color: white;
     background-color: lightgray;
     margin: 10px;
 }
 
+.snippets_header {
+    background-color: gray;
+    margin: 30px;
+    padding: 10px;
+    width: 800px;
+    display: inline-block;
+
+}
+
+.snippets_title {
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+}
+
 .snippets_block {
-    width: auto;
-    height: 220;
     display: inline-block;
     background-color: gray;
+    margin: 10px;
+}
+
+.snippet_img {
     margin: 10px;
 }
 
