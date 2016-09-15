@@ -41,6 +41,17 @@
         <p>To start editing the code, open the editor by right-clicking on your file. Now click on the edit button. <br> The first line of code for any batch file, is the to diable debug output.</p>
 
         <a class="code">1. | @echo off<br> 2. |</a>
+        <p>We can now start by writing our user input code. We first need to tell the user what to do. We can use an 'echo' tag for that. <br> This is the code:</p>
+
+        <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.</a>
+
+        <p>Now we need to store the user input in a variable. We can use an 'set /p' tag for that. The syntax for the 'set /p tag is as follows:'<br> set /p [variable name]=</p>
+
+        <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.<br> 4. | set /p input=</a>
+
+        <p>We have the input stored in the variable 'input' now. We want to calculate what the user has given us, into a single number. <br> For that we use the 'set /a' tag, where a stands for arimathic. <br> The siyntax is simple</p>
+
+        <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.<br> 4. | set /p input=</a>
 
 
 
