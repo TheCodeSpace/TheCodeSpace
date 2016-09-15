@@ -25,35 +25,28 @@
 		<ul>
             <li><a href="http://thecodespace.net/tutorial/index.html">Main Menu</a>
 		</ul>
-        <h1>Tutorial 1: Calculator</h1>
+        <h1>Lesson 1: Basic HTML</h1>
 
         <a class="code">1. | Anything in a box like this, is code.<br> 2. |</a>
         <br>
         <a class="information">Anything in a box like this is information or tips/tricks.</a>
         <a class="warning">Any thing in this kind of box should get extra attention, because it is a warning or very important note.</a>
 
-        <p>Now that we are done with all the "How this tutorial works" stuff, we can get started. <br> Batch is a scripting or programming language, that only works on Windows Machines. It is heavialy based on the terminal, <br> and has some similarities with MS-DOS.</p>
+        <p>Ok, now that that's out of the way, let's get started! <br />You probably started this course to learn making beautifull websites. <br />Well, if you did, you are at the right course! Wait! Don't go to a different course! It's going to be fun!</p>
 
         <a>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</a>
 
-        <p>We will now make a calculator. To create a batch file, you need to open a text document (Right-Click > New > Text Document), and save it as calculator.bat</p>
-        <p class="warning">Make sure you change the file type from TXT to All Files. Also make sure to save the file in an empty folder.</p>
-        <p>To start editing the code, open the editor by right-clicking on your file. Now click on the edit button. <br> The first line of code for any batch file, is the to diable debug output.</p>
+        <p>Ok, so let's get the basic HTML structure out of the way. <br />First we will need a Home page for our website. Let's make one by doing the following: <br />Right-Click > New Folder > Rename it to the name of your website > Right-Click > New File > Rename it to be index.html</p> <a class="warning">Be sure to replace the .txt extension with .html! Else it won't work!</a>
 
-        <a class="code">1. | @echo off<br> 2. |</a>
-        <p>We can now start by writing our user input code. We first need to tell the user what to do. We can use an 'echo' tag for that. <br> This is the code:</p>
+        <embed class="code" src="lesson_1.txt">
 
-        <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.</a>
+        <p>So what we just did, is declare the file. When you open this in a web browser, you'll just get a blank screen.<br /> The browser will read from the DOCTYPE element, so it knows which HTML version the page is made with. <br /> When you just put 'html' in there, the browser will detect it as the newest HTML version, which currently is HTML5. And then the Html element declares that everything inside of it, is read like an HTML element.</p>
 
-        <p>Now we need to store the user input in a variable. We can use an 'set /p' tag for that. The syntax for the 'set /p tag is as follows:'<br> set /p [variable name]=</p>
+        <a class="warning">As the code is Casesensitive, you will need to write everything exactly as shown!</a>
 
-        <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.<br> 4. | set /p input=</a>
+        <embed class="code" src="lesson_2.txt">
 
-        <p>We have the input stored in the variable 'input' now. We want to calculate what the user has given us, into a single number. <br> For that we use the 'set /a' tag, where a stands for arimathic. <br> The siyntax is simple</p>
-
-        <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.<br> 4. | set /p input=</a>
-
-
+        <p>Ok, now we added a bunch of code. But still nothing to look at on our page. <br />What we did, was make the structure complete, with a body & a head. <br /> If you wanted to get CSS in this file, you would link it in the Head element. But all the things that you want to show, <br /> are in the Body element. </p>
 
 
 	</body>
