@@ -36,25 +36,33 @@
 
         <a>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</a>
 
-        <p>We will now make a calculator. To create a batch file, you need to open a text document (Right-Click > New > Text Document), and save it as calculator.bat</p>
+        <p>We will now make a calculator. To create a batch file, you need to open a text document (Right-Click > New > Text Document), open the file, click File > Save As and save it as calculator.bat</p>
         <p class="warning">Make sure you change the file type from TXT to All Files. Also make sure to save the file in an empty folder.</p>
-        <p>To start editing the code, open the editor by right-clicking on your file. Now click on the edit button. <br> The first line of code for any batch file, is the to diable debug output.</p>
+        <p>To start editing the code, open the editor by right-clicking on your file and then clicking on the edit button. <br> The first line of code for any batch file, is the to diable debug output.</p>
 
         <a class="code">1. | @echo off<br> 2. |</a>
         <p>We can now start by writing our user input code. We first need to tell the user what to do. We can use an 'echo' tag for that. <br> This is the code:</p>
 
         <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.</a>
 
-        <p>Now we need to store the user input in a variable. We can use an 'set /p' tag for that. The syntax for the 'set /p tag is as follows:'<br> set /p [variable name]=</p>
+        <p>Now we need to store the user input in a variable. We can use an 'set /p' tag for that. The syntax for the 'set /p' tag is as follows:<br> set /p [variable name]=</p>
 
         <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.<br> 4. | set /p input=</a>
 
-        <p>We have the input stored in the variable 'input' now. We want to calculate what the user has given us, into a single number. <br> For that we use the 'set /a' tag, where a stands for arimathic. <br> The siyntax is simple</p>
+        <p>We have the input stored in the variable 'input' now. We want to calculate what the user has given us, into a single number. <br> For that we use the 'set /a' tag, where a stands for arimathic. <br> The syntax is simple: set /a [output_variable]=[input_variable]</p>
 
-        <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.<br> 4. | set /p input=</a>
+        <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.<br> 4. | set /p input=<br> 5. | set /a output=%input%</a>
 
+        <p>Now that we have done all of  the calculating, we are ready to show the answer to the user.<br> For that we use the 'echo' tag again, and also include a simple %% variable.</p>
 
+        <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.<br> 4. | set /p input=<br> 5. | set /a output=%input%<br> 6. | echo Answer: %output%</a>
 
+        <p>We also want to put the results and calculation into a text document.<br> For that we use the 'echo' tag, in combination with a ">>" (write to file) tag. <br> The syntax is: echo [to_be_saved_text] >>[document_name].[file_extension]<br>We also use a pause tag after this, so the window does not close immediatly.</p>
+
+        <a class="warning">Make sure your .bat file is inside of an empty folder, to make sure it does not override other files.</a>
+        <a class="code">1. | @echo off<br> 2. |<br> 3. | echo Enter the numbers and operators you want to use.<br> 4. | set /p input=<br> 5. | set /a output=%input%<br> 6. | echo Answer: %output%<br>7. | echo %time%_%date%: %input=%%output% >>calculator_outputs.txt<br>8. | pause</a>
+
+        <p>You are now ready to run your file. just double tap and play with the possibilities. Next tutorial coming soon!</p>
 
 	</body>
 </html>
