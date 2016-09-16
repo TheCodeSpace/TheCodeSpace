@@ -3,6 +3,31 @@
 	text-align: center;
 }
 
+
+.button {
+    background-color: gray;
+    color: black;
+    margin: 0px;
+    padding: 10px;
+    width: auto;
+    display: inline-block;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background-color: lightgray;
+    color: black;
+    margin: 0px;
+    padding: 10px;
+    width: auto;
+    display: inline-block;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
 .mail {
     background-color: lightgray;
     color: black;
