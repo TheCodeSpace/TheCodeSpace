@@ -4,14 +4,16 @@
 }
 
 .mail {
-    background-color: lightgray;
+    background-color: lightblue;
     color: black;
     margin: 0px;
     padding: 10px;
     width: 400px;
     display: inline-block;
-    border-radius: 10px;
-
+}
+.mail:hover{
+	background-color: navy;
+	color: white;
 }
 
 /*General Purpose Button*/
@@ -31,38 +33,42 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: #2CA0C7;
 	font-family: Arial;
-    border-radius: 10px;
+	text-align: left;
 }
 
 li {
 	display: inline-block;
+	float: left;
+	margin: 0;
 ;
 }
 
 li a, .dropbtn {
 	display: inline-block;
-	color: white;
-	text-align: center;
+	color: black;
 	padding: 14px 16px;
 	text-decoration: none;
+	background-color: #2CA0C7;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-	background-color: #2CA0C7;
+	background-color: lightblue;
 }
 
 li .dropdown {
 	display: inline-block;
 }
 
+
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #f9f9f9;
 	min-width: 140px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border: solid;
+	border-width: 2.5px;
+	border-color: navy;
 }
 
 .dropdown-content a {
@@ -71,12 +77,24 @@ li .dropdown {
 	text-decoration: none;
 	display: block;
 	text-align: left;
+	border: solid;
+	border-width: 3px;
+	border-color: white;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+	background-color: lightblue;
+}
 
 .dropdown:hover .dropdown-content {
 	display: block;
+}
+
+.currentPageInDropdown{
+	margin: 5px;
+	padding: 5px;
+	background-color: navy;
+	color: white;
 }
 
 /* Defaults */
