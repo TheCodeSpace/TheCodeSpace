@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="bin/lib/css/main.css">
+		<link rel="stylesheet" type="text/css" href="../bin/lib/css/main.css">
+		<title>TheCodeSpace | Snippets</title>
 	</head>
 	<body>
+
 		<ul>
-            <li2><a href="http://thecodespace.net/index.html">Home</a></li2>
 			<li class="dropdown">
-				<a href="#" class="dropbtn">&#9776</a>
+				<a href="index.html" class="dropbtn">&#9776</a>
 				<div class="dropdown-content">
+
 					<a href="index.html">Snippets</a>
 					<a href="addsnip.html">Add Snippets</a>
 					<a href="contact.html">Contact</a>
 				</div>
 			</li>
+			<script>
+
+			</script><h2 class="currentPage">TheCodeSpace | Snippets</h2>
+		</ul>
 		</ul>
 
-        <!--Snippet 1-->
         <p class="snippets_header">How to use: <br> Press Ctrl + F to find the snippets you need. Type keywords such as Python, Image, Import, PHP or Text Scaling</p>
+
+				<!--Snippet 1-->
         <div class="snippets_block">
             <p class="snippets_title">Import TXTs with HTML</p>
             <embed class="snippets" src="snippets/snippet_1/code.txt" height="200" width="600" >
@@ -41,4 +48,10 @@
             <embed class="snippets" src="snippets/snippet_3/desc.txt" height="200" width="300">
         </div>
 	</body>
+	<script>
+window.onload = function(){
+    var str = document.title;
+    document.getElementById("currentPage").innerHTML = str;
+}
+</script>
 </html>

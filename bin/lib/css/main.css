@@ -27,6 +27,65 @@
 }
 .btn:hover { background-color: #4EC2E9; }
 
+.snippets {
+    color: white;
+    background-color: lightgray;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.snippets_header {
+    background-color: gray;
+    color: white;
+    margin: 30px;
+    padding: 10px;
+    width: 800px;
+    border-radius: 10px;
+    display: inline-block;
+
+}
+
+.asc {
+    background-color: lightgray;
+    color: black;
+    margin: 30px;
+    padding: 10px;
+    width: 680px;
+    display: inline-block;
+    border-radius: 100px;
+    font-family: "Courier New", monospace;
+    font-style: italic;
+}
+
+.mail {
+    background-color: lightgray;
+    color: black;
+    margin: 0px;
+    padding: 10px;
+    width: 400px;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+
+.snippets_title {
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.snippets_block {
+    display: inline-block;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.snippet_img {
+    margin: 10px;
+}
+
 /* Dropdown Menu */
 ul {
 	list-style-type: none;
@@ -90,11 +149,10 @@ li .dropdown {
 	display: block;
 }
 
-.currentPageInDropdown{
+.currentPage{
 	margin: 5px;
 	padding: 5px;
-	background-color: navy;
-	color: white;
+	color: black;
 }
 
 /* Defaults */
