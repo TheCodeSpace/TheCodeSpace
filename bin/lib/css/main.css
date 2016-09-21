@@ -95,13 +95,14 @@ ul {
 	background-color: #2CA0C7;
 	font-family: Arial;
 	text-align: left;
+	display: flex;
+	align-items: center;
 }
 
 li {
 	display: inline-block;
 	float: left;
 	margin: 0;
-;
 }
 
 li a, .dropbtn {
@@ -115,7 +116,10 @@ li a, .dropbtn {
 li a:hover, .dropdown:hover .dropbtn {
 	background-color: lightblue;
 }
-
+.dropbtn{
+	display: flex;
+	align-items: center;
+}
 li .dropdown {
 	display: inline-block;
 }
@@ -149,10 +153,13 @@ li .dropdown {
 	display: block;
 }
 
-.currentPage{
-	margin: 5px;
-	padding: 5px;
-	color: black;
+#currentPage{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-size: 0.75em;
+	display: flex;
+	align-items: center;
 }
 
 /* Defaults */

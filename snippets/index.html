@@ -5,21 +5,16 @@
 		<title>TheCodeSpace | Snippets</title>
 	</head>
 	<body>
-
 		<ul>
 			<li class="dropdown">
 				<a href="index.html" class="dropbtn">&#9776</a>
 				<div class="dropdown-content">
-
 					<a href="index.html">Snippets</a>
 					<a href="addsnip.html">Add Snippets</a>
 					<a href="contact.html">Contact</a>
 				</div>
 			</li>
-			<script>
-
-			</script><h2 class="currentPage">TheCodeSpace | Snippets</h2>
-		</ul>
+			<h2><div id="currentPage"></div></h2>
 		</ul>
 
         <p class="snippets_header">How to use: <br> Press Ctrl + F to find the snippets you need. Type keywords such as Python, Image, Import, PHP or Text Scaling</p>
@@ -48,10 +43,10 @@
             <embed class="snippets" src="snippets/snippet_3/desc.txt" height="200" width="300">
         </div>
 	</body>
-	<script>
-window.onload = function(){
-    var str = document.title;
-    document.getElementById("currentPage").innerHTML = str;
+	<script type="text/javascript">
+window.onload =  function(){
+var x = document.title;
+document.getElementById('currentPage').innerHTML = x;
 }
 </script>
 </html>

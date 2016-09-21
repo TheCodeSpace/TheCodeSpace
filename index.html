@@ -26,15 +26,21 @@
 			<li class="dropdown">
 				<a href="index.html" class="dropbtn">&#9776</a>
 				<div class="dropdown-content">
-					<h2 class="currentPageInDropdown">TheCodeSpace | Home</h2>
 					<a href="index.html">Snippets</a>
 					<a href="addsnip.html">Add Snippets</a>
 					<a href="contact.html">Contact</a>
 				</div>
 			</li>
+			<h2><div id="currentPage"></div></h2>
 		</ul>
         <h1>Hey, we are not ready for you yet!</h1>
         <a>But we can show you the parts of the website that are ready already!</a>
         <p>The Snippets Program is still early in beta!</p>
 	</body>
+	<script type="text/javascript">
+window.onload =  function(){
+var x = document.title;
+document.getElementById('currentPage').innerHTML = x;
+}
+</script>
 </html>
