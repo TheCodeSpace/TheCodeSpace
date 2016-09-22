@@ -114,7 +114,6 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-	background-color: lightblue;
 }
 .dropbtn{
 	display: flex;
