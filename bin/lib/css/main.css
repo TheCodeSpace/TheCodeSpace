@@ -35,6 +35,7 @@
 }
 
 .snippets_header {
+	
     background-color: gray;
     color: white;
     margin: 30px;
@@ -114,7 +115,6 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-	background-color: lightblue;
 }
 .dropbtn{
 	display: flex;
