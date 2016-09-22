@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="bin/lib/css/main.css">
+		<title>TheCodeSpace | <!--page title--></title>
+	</head>
+	<body>
+		<ul>
+			<li class="dropdown">
+				<a href="index.html" class="dropbtn">&#9776</a>
+				<div class="dropdown-content">
+					<a href="<!--URL01-->"><!--Page 01 title--></a>
+					<a href="<!--URL02-->"><!--Page 02 title--></a>
+					<a href="<!--URL03-->"><!--Page 03 title--></a>
+				</div>
+			</li>
+			<h2><div id="currentPage"></div></h2>
+		</ul>
+    
+    <!--Page Contents-->
+
+	</body>
+	<script type="text/javascript">
+window.onload =  function(){
+var x = document.title;
+document.getElementById('currentPage').innerHTML = x;
+}
+</script>
+</html>
