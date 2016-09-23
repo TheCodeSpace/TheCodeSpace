@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../bin/lib/css/main.css">
+		<link rel=""
 		<title>TheCodeSpace | Snippets</title>
 	</head>
 	<body>
@@ -18,35 +19,30 @@
 		</ul>
 
         <p class="snippets_header">How to use: <br> Press Ctrl + F to find the snippets you need. Type keywords such as Python, Image, Import, PHP or Text Scaling</p>
-
-				<!--Snippet 1-->
-        <div class="snippets_block">
-            <p class="snippets_title">Import TXTs with HTML</p>
-            <embed class="snippets" src="snippets/snippet_1/code.txt" height="200" width="600" >
-            <img class="snippet_img" src="snippets/snippet_1/default.PNG" height="200" width="200">
-            <embed class="snippets" src="snippets/snippet_1/desc.txt" height="200" width="300">
-        </div>
-
-        <!--Snippet 2-->
-        <div class="snippets_block">
-            <p class="snippets_title">Add text to HTML with breaks and hyperlinks.</p>
-            <embed class="snippets" src="snippets/snippet_2/code.txt" height="200" width="600" >
-            <img class="snippet_img" src="snippets/snippet_2/default.PNG" height="200" width="200">
-            <embed class="snippets" src="snippets/snippet_2/desc.txt" height="200" width="300">
-        </div>
-
-        <!--Snippet 3-->
-        <div class="snippets_block">
-            <p class="snippets_title">Add images to HTML with scaling sizes and hyperlinks.</p>
-            <embed class="snippets" src="snippets/snippet_3/code.txt" height="200" width="600" >
-            <img class="snippet_img" src="snippets/snippet_3/default.PNG" height="200" width="200">
-            <embed class="snippets" src="snippets/snippet_3/desc.txt" height="200" width="300">
-        </div>
+				<div id="jsGenerated"></div>
 	</body>
+
+	<script src="bin/lib/js/jquery-3.1.1.js"></script>
 	<script type="text/javascript">
 window.onload =  function(){
-var x = document.title;
-document.getElementById('currentPage').innerHTML = x;
+	var x = document.title;
+	document.getElementById('currentPage').innerHTML = x;
+
+	var returnHtml;
+	var i = 1;
+
+	$.ajax({url: "https://api.github.com/repos/TheCodeSpace/TheCodeSpace/contents/snippets/snippets",
+		success: function(data){
+			do{
+				document.getElementById('jsGenerated').innerHTML = document.getElementById('jsGenerated').innerHTML + '<div class="snippets_block">' + '<p class="snippets_title">' + data[i].name + '</p>' + '<embed class="snippets" src="snippets/' + data[i].name + '/code.txt" height="200" width="600" >' + '<img class="snippet_img" src="snippets/' + data[i].name + '/default.PNG" height="200" width="200">' + '<embed class="snippets" src="snippets/' + data[i].name + '/desc.txt" height="200" width="300">' + '</div><br />';
+				console.log(document.getElementById('jsGenerated').innerHTML);
+				i++;
+			}while(data[i])
+		}
+	});
+
+
 }
 </script>
+
 </html>

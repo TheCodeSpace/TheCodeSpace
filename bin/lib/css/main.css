@@ -134,10 +134,8 @@ li .dropdown {
 	display: none;
 	position: absolute;
 	min-width: 140px;
-	border: solid;
-	border-width: 2.5px;
 	border-color: navy;
-    border-radius: 1em;
+  border-radius: 1em;
 }
 
 .dropdown-content a {
