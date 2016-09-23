@@ -29,15 +29,15 @@ window.onload =  function(){
 	document.getElementById('currentPage').innerHTML = x;
 
 	var returnHtml;
-	var i = 0;
+	var i = 1;
 
 	$.ajax({url: "https://api.github.com/repos/TheCodeSpace/TheCodeSpace/contents/snippets/snippets",
 		success: function(data){
-			while(data[i]){
+			do{
+				document.getElementById('jsGenerated').innerHTML = document.getElementById('jsGenerated').innerHTML + '<div class="snippets_block">' + '<p class="snippets_title">' + data[i].name + '</p>' + '<embed class="snippets" src="snippets/snippet_' + i + '/code.txt" height="200" width="600" >' + '<img class="snippet_img" src="snippets/snippet_' + i + '/default.PNG" height="200" width="200">' + '<embed class="snippets" src="snippets/snippet_' + i + '/desc.txt" height="200" width="300">' + '</div><br />';
+				console.log(document.getElementById('jsGenerated').innerHTML);
 				i++;
-				document.getElementById('jsGenerated').innerHTML = document.getElementById('jsGenerated').innerHTML + '<div class="snippets_block">' + '<p class="snippets_title">Import TXTs with HTML</p>' + '<embed class="snippets" src="snippets/snippet_' + i + '/code.txt" height="200" width="600" >' + '<img class="snippet_img" src="snippets/snippet_' + i + '/default.PNG" height="200" width="200">' + '<embed class="snippets" src="snippets/snippet_' + i + '/desc.txt" height="200" width="300">' + '</div><br />';
-				console.log(returnHtml);
-			}
+			}while(data[i])
 		}
 	});
 
