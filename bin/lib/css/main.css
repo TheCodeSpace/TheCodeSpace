@@ -35,7 +35,7 @@
 }
 
 .snippets_header {
-	
+
     background-color: gray;
     color: white;
     margin: 30px;
@@ -129,9 +129,11 @@ li .dropdown {
 	display: none;
 	position: absolute;
 	min-width: 140px;
-	border: solid;
-	border-width: 2.5px;
 	border-color: navy;
+	background-color: navy;
+	min-width: 140px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
 }
 
 .dropdown-content a {
