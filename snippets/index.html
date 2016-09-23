@@ -29,7 +29,7 @@ window.onload =  function(){
 	document.getElementById('currentPage').innerHTML = x;
 
 	var returnHtml;
-	var i = 1;
+	var i = 0;
 
 	$.ajax({url: "https://api.github.com/repos/TheCodeSpace/TheCodeSpace/contents/snippets/snippets",
 		success: function(data){
