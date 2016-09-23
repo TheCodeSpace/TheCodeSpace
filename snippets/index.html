@@ -34,7 +34,7 @@ window.onload =  function(){
 	$.ajax({url: "https://api.github.com/repos/TheCodeSpace/TheCodeSpace/contents/snippets/snippets",
 		success: function(data){
 			do{
-				document.getElementById('jsGenerated').innerHTML = document.getElementById('jsGenerated').innerHTML + '<div class="snippets_block">' + '<p class="snippets_title">' + data[i].name + '</p>' + '<embed class="snippets" src="snippets/snippet_' + i + '/code.txt" height="200" width="600" >' + '<img class="snippet_img" src="snippets/snippet_' + i + '/default.PNG" height="200" width="200">' + '<embed class="snippets" src="snippets/snippet_' + i + '/desc.txt" height="200" width="300">' + '</div><br />';
+				document.getElementById('jsGenerated').innerHTML = document.getElementById('jsGenerated').innerHTML + '<div class="snippets_block">' + '<p class="snippets_title">' + data[i].name + '</p>' + '<embed class="snippets" src="snippets/' + data[i].name + '/code.txt" height="200" width="600" >' + '<img class="snippet_img" src="snippets/' + data[i].name + '/default.PNG" height="200" width="200">' + '<embed class="snippets" src="snippets/' + data[i].name + '/desc.txt" height="200" width="300">' + '</div><br />';
 				console.log(document.getElementById('jsGenerated').innerHTML);
 				i++;
 			}while(data[i])
