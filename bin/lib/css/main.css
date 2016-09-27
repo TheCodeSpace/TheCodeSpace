@@ -19,13 +19,13 @@
 /*General Purpose Button*/
 
 .btn:link, .btn:visited {
-	background-color: #3DB1D8;
+	background-color: gray;
 	text-decoration: none;
 	color: white;
 	text-align: center;
 	padding: 14px 25px;
 }
-.btn:hover { background-color: #4EC2E9; }
+.btn:hover { background-color: lightgray; }
 
 .snippets {
     color: white;
