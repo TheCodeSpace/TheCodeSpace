@@ -21,11 +21,25 @@
 .btn:link, .btn:visited {
 	background-color: gray;
 	text-decoration: none;
-	color: white;
+	color: black;
 	text-align: center;
 	padding: 14px 25px;
 }
-.btn:hover { background-color: lightgray; }
+.btn:hover { background-color: lightblue; color: #2A5C8E;}
+
+.btn-tut:link, .btn-tut:visited {
+	max-width: 30%;
+	display: block;
+	margin: auto;
+	background-color: #2A5C8E;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 14px 25px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.btn-tut:hover { background-color: lightblue; color: #2A5C8E;}
+
 
 .snippets {
     color: white;
