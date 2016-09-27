@@ -21,15 +21,27 @@
 		<p>Python is a programming language that's quite easy to master, while not compromising on functionality. It's quite closely related to JavaScript, but with a lot less fuss.</p>
 		
 		<h2>The tutorials:</h2>
-		<a class="btn-tut" href="tut_1/tut_">First tutorial: instalation.</a>
-		<a class="btn-tut" href="tut_1/tut_">First tutorial: instalation.</a>
-		<a class="btn-tut" href="tut_1/tut_">First tutorial: instalation.</a>
+		<div id="tut-listing"></div>
 		
 	</body>
 	<script type="text/javascript">
 window.onload =  function(){
-var x = document.title;
-document.getElementById('currentPage').innerHTML = x;
+	var x = document.title;
+	document.getElementById('currentPage').innerHTML = x;
+	
+	var returnHtml;
+	var i = 0;
+	var x;
+
+	$.ajax({url: "https://api.github.com/repos/TheCodeSpace/TheCodeSpace/contents/tutorial",
+		success: function(data){
+			do{
+				x = i + 1;
+				document.getElementById('tut-listing').innerHTML = document.getElementById('tut-listing').innerHTML + '<a class="btn-tut" href="tut_' + i + '/tut.html">' + x + ': <embed src="tut_' + i + '/title.txt"></embed></a>'
+				i++;
+			}while(data[i])
+		}
+	});
 }
 </script>
 </html>
