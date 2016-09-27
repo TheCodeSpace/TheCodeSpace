@@ -24,6 +24,7 @@
 		<div id="tut-listing"></div>
 		
 	</body>
+	<script src="../../bin/lib/js/jquery-3.1.1.js"></script>
 	<script type="text/javascript">
 window.onload =  function(){
 	var x = document.title;
@@ -33,11 +34,12 @@ window.onload =  function(){
 	var i = 0;
 	var x;
 
-	$.ajax({url: "https://api.github.com/repos/TheCodeSpace/TheCodeSpace/contents/tutorial",
+	$.ajax({url: "https://api.github.com/repos/TheCodeSpace/TheCodeSpace/contents/tutorial/python/tut",
 		success: function(data){
 			do{
+				console.log(data);
 				x = i + 1;
-				document.getElementById('tut-listing').innerHTML = document.getElementById('tut-listing').innerHTML + '<a class="btn-tut" href="tut_' + i + '/tut.html">' + x + ': <embed src="tut_' + i + '/title.txt"></embed></a>'
+				document.getElementById('tut-listing').innerHTML = document.getElementById('tut-listing').innerHTML + '<a class="btn-tut" href="tut_' + i + '/tut.html">' + x + ': <embed src="tut_' + i + '/title.txt"></embed></a>';
 				i++;
 			}while(data[i])
 		}
