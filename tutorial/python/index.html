@@ -39,7 +39,7 @@ window.onload =  function(){
 			do{
 				console.log(data);
 				x = i +1;
-				document.getElementById('tut-listing').innerHTML = document.getElementById('tut-listing').innerHTML + '<a class="btn-tut" href="tut/tut_' + x + '/tut.html">' + data[i].name + '</a><br />';
+				document.getElementById('tut-listing').innerHTML = document.getElementById('tut-listing').innerHTML + '<a class="btn-tut" href="tut/tut_' + x + '/tut.html"><embed src="tut/tut_' + x + '/title.txt"></embed></a><br />';
 				i++;
 			}while(data[i])
 		}
