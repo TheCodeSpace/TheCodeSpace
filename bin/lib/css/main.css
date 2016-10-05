@@ -54,6 +54,39 @@
     border-radius: 10px;
 }
 
+.shop_header {
+    background-color: lightgray;
+    color: black;
+    margin: 30px;
+    padding: 10px;
+    width: auto;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.shop_footer {
+    background-color: lightgray;
+    color: black;
+    margin-right:30px;
+    margin-bottom: 0px;
+    padding: 10px;
+    width: auto;
+    border-radius: 10px;
+    margin-left: 680px;
+    font-size: 30px;
+}
+
+.shop_desc {
+    background-color: lightgray;
+    color: black;
+    margin: 30px;
+    padding: 10px;
+    width: 700px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
 .snippets_header {
 
     background-color: gray;
@@ -63,6 +96,7 @@
     width: 800px;
     border-radius: 10px;
     display: inline-block;
+
 }
 
 .asc {
@@ -100,6 +134,8 @@
 .shop_picture {
     margin: 10px;
     width: auto;
+    display: inline-block;
+    border-radius: 10px;
 }
 
 
@@ -108,8 +144,17 @@
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+
 }
 
+.shop_block {
+    display: inline-block;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 10px;
+    width: 800px;
+    height: 1030px;
+}
 
 .snippets_block {
     display: inline-block;
@@ -121,6 +166,7 @@
 
 .snippet_img {
     margin: 10px;
+    border-radius: 10px;
 }
 
 
