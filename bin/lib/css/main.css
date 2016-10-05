@@ -40,6 +40,12 @@
 }
 .btn-tut:hover { background-color: lightblue; color: #2A5C8E;}
 
+.shop_item {
+    color: white;
+    background-color: lightgray;
+    margin: 10px;
+    border-radius: 10px;
+}
 
 .snippets {
     color: white;
@@ -82,12 +88,27 @@
 
 }
 
+
+.shop_description {
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.shop_picture {
+    margin: 10px;
+}
+
+
 .snippets_title {
     background-color: lightgray;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
 }
+
 
 .snippets_block {
     display: inline-block;
@@ -96,9 +117,11 @@
     border-radius: 10px;
 }
 
+
 .snippet_img {
     margin: 10px;
 }
+
 
 /* Dropdown Menu */
 ul {
