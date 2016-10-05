@@ -27,7 +27,7 @@ window.onload =  function(){
 	$.ajax({url: "https://api.github.com/repos/TheCodeSpace/TheCodeSpace/contents/shop/items",
 		success: function(data){
 			do{
-				document.getElementById('jsGenerated').innerHTML = document.getElementById('jsGenerated').innerHTML + '<div class="shop_item">' + '<p class="shop_itemtitle">' + data[i].name + '</p>' + '<embed class="shop_description" src="items/' + data[i].name + '/description.txt" height="200" width="400" >' + '<br>' + '<img class="shop_picture" src="items/' + data[i].name + '/picture.png" width="200">' + '</div>';
+				document.getElementById('jsGenerated').innerHTML = document.getElementById('jsGenerated').innerHTML + '<div class="shop_item">' + '<p class="shop_itemtitle">' + data[i].name + '</p>' + '<embed class="shop_description" src="items/' + data[i].name + '/description.txt" >' + '<br>' + '<img class="shop_picture" src="items/' + data[i].name + '/picture.png" >' + '</div>';
 				console.log(document.getElementById('jsGenerated').innerHTML);
 				i++;
 			}while(data[i])
