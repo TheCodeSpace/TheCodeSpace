@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../bin/lib/css/main.css">
+		<title>TheCodeSpace | Shop</title>
+    </head>
+    <body>
+        <ul>
+			<li class="dropdown">
+				<a href="index.html" class="dropbtn">&#9776</a>
+				<div class="dropdown-content">
+					<a href="index.html">Shop</a>
+					<a href="order.html">Order</a>
+                </div>
+			</li>
+			<h2><div id="currentPage"></div></h2>
+		</ul>
+        <div id="jsGenerated"></div>
+	<script src="../bin/lib/js/jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+window.onload =  function(){
+	document.getElementById("currentPage").innerHTML = document.title;
+
+	var returnHtml;
+	var i = 0;
+
+	$.ajax({url: "https://api.github.com/repos/TheCodeSpace/TheCodeSpace/contents/shop/items",
+		success: function(data){
+			do{
+				document.getElementById('jsGenerated').innerHTML = document.getElementById('jsGenerated').innerHTML + '<div class="shop_item">' + '<p class="shop_itemtitle">' + data[i].name + '</p>' + '<embed class="shop_description" src="items/' + data[i].name + '/description.txt" >' + '<br>' + '<img class="shop_picture" src="items/' + data[i].name + '/picture.png" >' + '</div>';
+				console.log(document.getElementById('jsGenerated').innerHTML);
+				i++;
+			}while(data[i])
+		}
+	});
+
+
+}
+</script>
+    </body>
+</html>
