@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="bin/lib/css/main.css">
-		<title>TheCodeSpace | <!--page title--></title>
+		<link rel="stylesheet" type="text/css" href="../../../../bin/lib/css/main.css">
+		<title>TheCodeSpace | Python: 1 - Hello World</title>
 	</head>
 	<body>
 		<ul>
 			<li class="dropdown">
 				<a href="index.html" class="dropbtn">&#9776</a>
 				<div class="dropdown-content">
-					<a href="<!--URL01-->"><!--Page 01 title--></a>
-					<a href="<!--URL02-->"><!--Page 02 title--></a>
+					<a href="../../../index.html">Tutorials</a>
+					<a href=""><!--Page 02 title--></a>
 					<a href="<!--URL03-->"><!--Page 03 title--></a>
 				</div>
 			</li>
 			<h2><div id="currentPage"></div></h2>
 		</ul>
-    
-    <!--Page Contents-->
 
+		<h1>An introduction</h1>
+		<p>
+			I'll start with the most classic example of code (ever): Hello, World!<br />
+			I'll start by showing you the program and then I'll break it down and explain what does what.
+		</p>
+		<embed src="Hello_World.py" class="code"></embed>
+		<embed src="Hello_World_output.txt" class="code_output"></embed>
+		<hr />
+		<hr/>
+		<h1>The explanation:</h1>
+
+		<hr/>
+		<hr/>
+
+		<b>#!/usr/bin/python</b>
+		<p>This is a bit hard to explain, but it basically tells the computer that it's a python program. For now, just ignore it.</p>
+
+		<hr/>
+
+		<b># Now for the actual program.</b>
+		<p>This is a comment. Every line starting with a # will not be executed. Comments are very useful for explaining parts of the code. I'll be using these a lot in later tutorials, so pay attention to those.</p>
+
+		<hr/>
+
+		<b>greeting = 'Hello, World!'</b>
+		<p>This line creates a variable. It says that when running the program it should interpret greeting (or whatever you want to call the variable) as its value. It's value in this example is a string (basically some text) saying Hello, World!</p>
+
+		<hr/>
+
+		<b>print(greeting)</b>
+		<p>This tells the computer to say Hello, World! through a terminal or the IDE you use. To show you what'd happen I made an output block. Instead of print(greeting), you could also use print greeting. I prefer the first method because I used java and c based languages before python and thus am used to this method.</p>
 	</body>
 	<script type="text/javascript">
 window.onload =  function(){

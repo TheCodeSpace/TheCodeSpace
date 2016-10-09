@@ -15,6 +15,29 @@
 	background-color: navy;
 	color: white;
 }
+.code {
+    background-color: lightblue;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    display: inline-block;
+    border-radius: 10px;
+    font-family: "Courier New", monospace;
+    text-align: left;
+}
+.code_output {
+    background-color: lightblue;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+		height: 50px;
+    display: inline-block;
+    border-radius: 10px;
+    font-family: "Courier New", monospace;
+    text-align: left
+}
 
 /*General Purpose Button*/
 
